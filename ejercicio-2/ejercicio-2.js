@@ -3,10 +3,10 @@
 let divisible = prompt("Dame un numero");
 {
     if (divisible % 2 === 0) {
-        alert(divisible + "numero es divisible entre 2")
+        alert(divisible + " es un numero divisble entre 2")
     }
 
     else{
-        alert(divisible + "numero no es divisble entre 2")
+        alert(divisible + " no es un numero divisble entre 2")
     }
 } 
