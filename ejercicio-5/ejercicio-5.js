@@ -2,6 +2,10 @@
 function ejercicio5(){
     let a = prompt("Dame un numero");
     let b = prompt("Dame otro numero");
+
+    a = Number(a);
+    b = Number(b);
+
     if(a < b){
     alert( a + " es menor que " + b )
     }

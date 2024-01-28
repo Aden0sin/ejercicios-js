@@ -1,0 +1,20 @@
+// 6. Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.
+
+function ejercicio6(){
+    alert("Dame tres numeros y te ayudare a identificar cual es el mayor")
+    let a = prompt("Dame tu primer numero");
+    let b = prompt("Dame tu segundo numero"):
+    let c = prompt("Dame tu tercer numero");
+
+}
+
+function identificarMayor(a, b, c){
+    if( a > b && a > c){
+        let mayor = a   }
+        else if (b > a && b > c){
+            let mayor = b
+        }
+        else if ( c < b && c < a){
+            let mayor = c
+        }
+}
