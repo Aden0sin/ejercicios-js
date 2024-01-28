@@ -13,4 +13,4 @@ function ejercicio5(a,b){
     }
 }
 
-ejercicio-5()
+ejercicio5()
