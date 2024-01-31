@@ -3,8 +3,11 @@
 function Calificador()
 {
     let calificacion = prompt("Dame un numero entre el 1 al 10 y te dire la calificacion");
+    
+    calificacion = Number(calificacion);
 
-    Identificador();
+
+ 
 
     function Identificador(calificacion)
     {
@@ -18,19 +21,16 @@ function Calificador()
     {}
     }
 
-    if(calificacion < 6 ){
+    Identificador(calificacion);
+
+    if(calificacion < 6 && calificacion >= 1){
         console.log("Reprobado!");
         alert("Reprobado");
     }
 
-    else if( calificacion >= 6 || calificacion <= 8){
+    else if( calificacion >= 6 && calificacion <= 8){
         console.log("Regular");
         alert("Regular")
-    }
-
-    else if( calificacion == 10){
-        console.log("Excelente");
-        alert("Excelente")
     }
 
     else if( calificacion == 9){
@@ -38,7 +38,12 @@ function Calificador()
         alert("Bien!")
     }
 
-
+    else if( calificacion == 10){
+        console.log("Excelente");
+        alert("Excelente")
+    }
 
     }
+
+    Calificador()
 
