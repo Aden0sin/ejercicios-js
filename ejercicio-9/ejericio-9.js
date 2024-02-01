@@ -70,3 +70,28 @@ alert( usuario + " el total de su orden es de " + total);
 }
 
 ordenDeHelado()
+
+
+
+
+let inventario = [{ name: "helado", precio: 50, disponible: si },
+                 { name: "kitkat", precio: 15, disponible: no },
+                 { name: "brownie", precio: 20, disponible: si},
+]
+
+function disponibilidad(producto){ 
+    let prod = inventario.find((element) => element.name === producto);
+
+    if (prod) {
+        if (prod.disponible  === "si"){
+
+        }
+        else if{
+            alert("Lo sentimos, este articulo no esta disponible")
+        }
+    } 
+
+
+
+
+}
