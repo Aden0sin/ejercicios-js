@@ -24,6 +24,7 @@ else if(helado == "no"){
 else{    
     console.log("Error!");
     alert("Error, por favor intenta de nuevo")
+    return;
 }
 
 let kitkat = prompt("Deseas añadir topping de kitkat? Responde Si o No")
