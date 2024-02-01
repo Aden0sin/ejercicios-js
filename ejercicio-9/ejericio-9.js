@@ -21,6 +21,11 @@ else if(helado == "no"){
     return;
 }
 
+else{    
+    console.log("Error!");
+    alert("Error, por favor intenta de nuevo")
+}
+
 let kitkat = prompt("Deseas añadir topping de kitkat? Responde Si o No")
 kitkat = kitkat.toLowerCase().trim();
 
@@ -31,6 +36,11 @@ else if(kitkat  == "no"){
     
     kitkat = 0
     console.log( usuario + " no desea kitkat");
+}
+else{    
+    console.log("Error!");
+    alert("Error, por favor intenta de nuevo")
+    return;
 }
 
 
@@ -48,7 +58,8 @@ else if(brownie  == "no"){
 
 else{    
     console.log("Error!");
-    alert("Error!")
+    alert("Error, por favor intenta de nuevo")
+    return;
 }
 
 let total = helado + kitkat + brownie;
