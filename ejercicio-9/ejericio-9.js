@@ -89,19 +89,14 @@ function disponibilidad(producto){
         if (prod.disponible  === "si"){
         
         }
-        else if{
+        else{
             alert("Lo sentimos, este articulo no esta disponible, por favor vuelve a hacer tu orden");
             return;
         }
-
+    }
     else{
         alert("error")
-    }
-
-    else{
-        alert("Lo sentimos, este articulo no esta disponible");
-
-    }
+    
     } 
 
 }
@@ -126,7 +121,7 @@ let helado = prompt("Deseas un helado? Responde Si o No");
     disponibilidad(kitkat);
     let precioKitkat = obtenerPrecio(kitkat);
 
-    let bronie = prompt("Deseas añadir topping de brownie? Responde Si o No"); 
+    let brownie = prompt("Deseas añadir topping de brownie? Responde Si o No"); 
     disponibilidad(brownie);
     let precioBrownie = obtenerPrecio(brownie);
 
