@@ -87,8 +87,18 @@ function disponibilidad(producto){
 
         }
         else if{
-            alert("Lo sentimos, este articulo no esta disponible")
+            alert("Lo sentimos, este articulo no esta disponible");
+            return;
         }
+
+    else{
+        alert("error")
+    }
+
+    else{
+        alert("Lo sentimos, este articulo no esta disponible");
+
+    }
     } 
 
 
