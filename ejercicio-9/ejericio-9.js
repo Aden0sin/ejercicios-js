@@ -83,28 +83,25 @@ let inventario = [{ name: "helado", precio: 50, disponible: "si" },
 ]
 
 function disponibilidad(producto){ 
-    let prod = inventario.find((element) => element.name === producto);
+    let productoEncontrado = inventario.find((element) => element.name === producto);
 
-    if (prod) {
-        if (prod.disponible  === "si"){
-        
-        }
-        else{
-            alert("Lo sentimos, este articulo no esta disponible, por favor vuelve a hacer tu orden");
-            return;
-        }
+    if (productoEncontrado) {
+        return true
+       
     }
     else{
         alert("error")
+        return false
+        
     
     } 
 
 }
 
-function obtenerPrecio(producto){
-    let prod = inventario.find((element) => element.name === producto);
-    if(prod){
-        return prod.precio;}
+function obtenerPrecio(prod){
+    let productoPrecio = inventario.find((element) => element.name === prod);
+    if(productoPrecio){
+        return productoPrecio.precio;}
     else{
     alert("error, precio no encontrado!");
     }
@@ -113,15 +110,18 @@ function obtenerPrecio(producto){
 function ordenarHelado2(){
     alert("Bienvenido a Eskimo!");
     let usuario = prompt("Brindanos tu nombre por favor");
-let helado = prompt("Deseas un helado? Responde Si o No"); 
+    let helado = prompt("Deseas un helado? Responde Si o No"); 
+    helado = helado.toLowerCase().trim()
     disponibilidad(helado);
     let precioHelado = obtenerPrecio(helado);
     
     let kitkat = prompt("Deseas añadir topping de kitkat? Responde Si o No"); 
+    kitkat = kitkat.toLowerCase().trim()
     disponibilidad(kitkat);
     let precioKitkat = obtenerPrecio(kitkat);
 
     let brownie = prompt("Deseas añadir topping de brownie? Responde Si o No"); 
+    brownie = brownie.toLowerCase().trim()
     disponibilidad(brownie);
     let precioBrownie = obtenerPrecio(brownie);
 
